@@ -2,8 +2,8 @@
 Тут написати умову до завдання
 """
 
-from example.Tereshchenko_Igor.workshop1.source.inputpkg.inputter import inputFloat
-from
+from workshop1.source.inputpkg.inputter import inputFloat
+
 
 def summ(a, b):
     """
@@ -46,11 +46,9 @@ def summ(a, b):
 
     if (a > 100.0) | (a < -100.0) | (b > 100.0) | (b < -100.0):
         raise ValueError
-
     return a + b
-
 
 if __name__ == "__main__":
     a = inputFloat("Enter float: ")
     b = inputFloat("Enter float: ")
-    print(sum(a, b))
+    print(summ(a,b))
