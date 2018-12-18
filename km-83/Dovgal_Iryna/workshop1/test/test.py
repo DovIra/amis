@@ -11,3 +11,14 @@ for i in range(n, m):
         list.append(i)
 print(list)
 print(count)
+
+def recurse(mass):
+    if len(mass) == 0:
+        return None
+    if len(mass) % 3 == 0:
+        print(mass[1])
+
+    return recurse(mass[1:])
+
+
+print(recurse([1, 2, 3, 6, 5, 3, 6, 9, 9, 0, 0, 8, 7, 8, 9]))
